@@ -53,11 +53,11 @@ import multiprocessing
 from model import Model
 cpu_cont = multiprocessing.cpu_count()
 from transformers import (WEIGHTS_NAME, AdamW, get_linear_schedule_with_warmup,
-                          BertConfig, BertForMaskedLM, BertTokenizer, BertForSequenceClassification,
-                          GPT2Config, GPT2LMHeadModel, GPT2Tokenizer,
-                          OpenAIGPTConfig, OpenAIGPTLMHeadModel, OpenAIGPTTokenizer,
-                          RobertaConfig, RobertaForSequenceClassification, RobertaTokenizer,
-                          DistilBertConfig, DistilBertForMaskedLM, DistilBertForSequenceClassification, DistilBertTokenizer)
+                        BertConfig, BertForMaskedLM, BertTokenizer, BertForSequenceClassification,
+                        GPT2Config, GPT2LMHeadModel, GPT2Tokenizer,
+                        OpenAIGPTConfig, OpenAIGPTLMHeadModel, OpenAIGPTTokenizer,
+                        RobertaConfig, RobertaForSequenceClassification, RobertaTokenizer,
+                        DistilBertConfig, DistilBertForMaskedLM, DistilBertForSequenceClassification, DistilBertTokenizer)
 
 logger = logging.getLogger(__name__)
 
@@ -74,10 +74,10 @@ MODEL_CLASSES = {
 class InputFeatures(object):
     """A single training/test features for a example."""
     def __init__(self,
-                 input_tokens,
-                 input_ids,
-                 idx,
-                 label,
+                input_tokens,
+                input_ids,
+                idx,
+                label,
 
     ):
         self.input_tokens = input_tokens
@@ -133,7 +133,7 @@ def train(args, train_dataset, model, tokenizer):
     train_sampler = RandomSampler(train_dataset) if args.local_rank == -1 else DistributedSampler(train_dataset)
     
     train_dataloader = DataLoader(train_dataset, sampler=train_sampler, 
-                                  batch_size=args.train_batch_size,num_workers=4,pin_memory=True)
+                                batch_size=args.train_batch_size,num_workers=4,pin_memory=True)
     args.max_steps=args.epoch*len( train_dataloader)
     args.save_steps=len( train_dataloader)
     args.warmup_steps=len( train_dataloader)
