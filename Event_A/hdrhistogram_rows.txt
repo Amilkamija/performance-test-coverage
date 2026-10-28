@@ -1,0 +1,4 @@
+outputs/coverageJMH.csv:HdrHistogram,780,120,29,15.38,3.72,12,0.77,491,83,40.92
+outputs/coverageJUnit.csv:HdrHistogram,780,551,188,70.64,24.1,147,0.78,4686,512,31.88
+outputs/Overlap_Ratios_JMH.csv:HdrHistogram,0.77
+outputs/Overlap_Ratios_Junit.csv:HdrHistogram,0.78
