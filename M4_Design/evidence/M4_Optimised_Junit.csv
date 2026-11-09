@@ -1,0 +1,20 @@
+Project Name,Overlap Ratio
+arrow,0.77
+byte-buddy,0.70
+cantaloupe,0.81
+client_java,0.70
+commons-bcel,0.66
+fastjson,0.15
+feign,0.77
+HdrHistogram,0.78
+imglib2,0.67
+iri,0.65
+jdbi,0.83
+jgrapht,0.80
+jooby,0.55
+logbook,0.78
+objenesis,0.57
+panda,0.76
+r2dbc-h2,0.59
+SquidLib,0.50
+vert.x,0.74
