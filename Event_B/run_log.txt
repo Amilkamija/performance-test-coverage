@@ -1,0 +1,67 @@
+Event B run log - CS4928 G17 P23
+Started (UTC): 2026-11-10T12:26:26+00:00
+Platform: macOS-27.0.1-arm64-arm-64bit | CPUs: 8
+Python 3.10.11 | pandas 2.3.3 | numpy 2.2.6
+Repository HEAD: 58976b3 (frozen state compared: PRE_EVENT_B)
+Protocol: project=byte-buddy scales=[0.25, 0.5, 1, 2, 4] seed=4928 reps optimised=5 original=3 cap=900s tolerance=1e-12
+input: inputs/wrangled/u2m/00_combined_test_to_methods.csv sha256=96c3ca2ad8b4377884a41842aaca4db3707bf052772a533182924c9cd81eb9b1 (identical to PRE_EVENT_B)
+original: M4_Design/evidence/2-Overlap-JUnit-original.py sha256=a0bd99ba68ea60ea37f59d27c1207931e230636c9b2cc3fec64cbbeeaf96abb9 (identical to PRE_EVENT_B)
+optimised: analysis/2-Overlap-JUnit.py sha256=c1f408b6331ccc0f5730012796dfc8e6352803151bbdf2a8b2fff6603bd8632f (identical to PRE_EVENT_B)
+byte-buddy at 1x: 6357 tests, 37178 rows, 4414 rows with no recorded method (NaN), 1 distinct NaN object(s)
+
+[12:26:28] scale=0.25 optimised time   run=1 ok      nan_obj=1 s=0.029 peakMiB= ratio=0.7105882352941176
+[12:26:38] scale=0.25 original  time   run=1 ok      nan_obj=1 s=8.041 peakMiB= ratio=0.7105882352941176
+[12:26:39] scale=0.25 optimised time   run=2 ok      nan_obj=1 s=0.030 peakMiB= ratio=0.7105882352941176
+[12:26:48] scale=0.25 original  time   run=2 ok      nan_obj=1 s=7.914 peakMiB= ratio=0.7105882352941176
+[12:26:49] scale=0.25 optimised time   run=3 ok      nan_obj=1 s=0.074 peakMiB= ratio=0.7105882352941176
+[12:26:58] scale=0.25 original  time   run=3 ok      nan_obj=1 s=7.950 peakMiB= ratio=0.7105882352941176
+[12:27:00] scale=0.25 optimised time   run=4 ok      nan_obj=1 s=0.030 peakMiB= ratio=0.7105882352941176
+[12:27:01] scale=0.25 optimised time   run=5 ok      nan_obj=1 s=0.030 peakMiB= ratio=0.7105882352941176
+[12:27:02] scale=0.25 optimised memory run=1 ok      nan_obj=1 s= peakMiB=1.26 ratio=0.7105882352941176
+[12:27:16] scale=0.25 original  memory run=1 ok      nan_obj=1 s= peakMiB=1.26 ratio=0.7105882352941176
+[12:27:17] scale=0.5 optimised time   run=1 ok      nan_obj=1 s=0.051 peakMiB= ratio=0.725897920604915
+[12:27:50] scale=0.5 original  time   run=1 ok      nan_obj=1 s=32.161 peakMiB= ratio=0.725897920604915
+[12:27:52] scale=0.5 optimised time   run=2 ok      nan_obj=1 s=0.052 peakMiB= ratio=0.725897920604915
+[12:28:24] scale=0.5 original  time   run=2 ok      nan_obj=1 s=31.285 peakMiB= ratio=0.725897920604915
+[12:28:25] scale=0.5 optimised time   run=3 ok      nan_obj=1 s=0.053 peakMiB= ratio=0.725897920604915
+[12:28:58] scale=0.5 original  time   run=3 ok      nan_obj=1 s=31.680 peakMiB= ratio=0.725897920604915
+[12:28:59] scale=0.5 optimised time   run=4 ok      nan_obj=1 s=0.054 peakMiB= ratio=0.725897920604915
+[12:29:01] scale=0.5 optimised time   run=5 ok      nan_obj=1 s=0.053 peakMiB= ratio=0.725897920604915
+[12:29:02] scale=0.5 optimised memory run=1 ok      nan_obj=1 s= peakMiB=2.42 ratio=0.725897920604915
+[12:29:54] scale=0.5 original  memory run=1 ok      nan_obj=1 s= peakMiB=2.42 ratio=0.725897920604915
+[12:29:55] scale=1 optimised time   run=1 ok      nan_obj=1 s=0.100 peakMiB= ratio=0.7032457496136012
+[12:32:03] scale=1 original  time   run=1 ok      nan_obj=1 s=126.555 peakMiB= ratio=0.7032457496136012
+[12:32:04] scale=1 optimised time   run=2 ok      nan_obj=1 s=0.098 peakMiB= ratio=0.7032457496136012
+[12:34:12] scale=1 original  time   run=2 ok      nan_obj=1 s=126.541 peakMiB= ratio=0.7032457496136012
+[12:34:14] scale=1 optimised time   run=3 ok      nan_obj=1 s=0.098 peakMiB= ratio=0.7032457496136012
+[12:36:22] scale=1 original  time   run=3 ok      nan_obj=1 s=126.877 peakMiB= ratio=0.7032457496136012
+[12:36:23] scale=1 optimised time   run=4 ok      nan_obj=1 s=0.098 peakMiB= ratio=0.7032457496136012
+[12:36:24] scale=1 optimised time   run=5 ok      nan_obj=1 s=0.099 peakMiB= ratio=0.7032457496136012
+[12:36:25] scale=1 optimised memory run=1 ok      nan_obj=1 s= peakMiB=4.82 ratio=0.7032457496136012
+[12:38:55] scale=1 original  memory run=1 ok      nan_obj=1 s= peakMiB=4.82 ratio=0.7032457496136012
+[12:38:56] scale=2 optimised time   run=1 ok      nan_obj=1 s=0.121 peakMiB= ratio=0.703016241299304
+[12:44:15] scale=2 original  time   run=1 ok      nan_obj=1 s=318.267 peakMiB= ratio=0.703016241299304
+[12:44:16] scale=2 optimised time   run=2 ok      nan_obj=1 s=0.121 peakMiB= ratio=0.703016241299304
+[12:49:38] scale=2 original  time   run=2 ok      nan_obj=1 s=321.499 peakMiB= ratio=0.703016241299304
+[12:49:39] scale=2 optimised time   run=3 ok      nan_obj=1 s=0.122 peakMiB= ratio=0.703016241299304
+[12:54:53] scale=2 original  time   run=3 ok      nan_obj=1 s=313.588 peakMiB= ratio=0.703016241299304
+[12:54:54] scale=2 optimised time   run=4 ok      nan_obj=1 s=0.120 peakMiB= ratio=0.703016241299304
+[12:54:55] scale=2 optimised time   run=5 ok      nan_obj=1 s=0.120 peakMiB= ratio=0.703016241299304
+[12:54:56] scale=2 optimised memory run=1 ok      nan_obj=1 s= peakMiB=9.51 ratio=0.703016241299304
+[13:03:29] scale=2 original  memory run=1 ok      nan_obj=1 s= peakMiB=9.51 ratio=0.703016241299304
+[13:03:30] scale=4 optimised time   run=1 ok      nan_obj=1 s=0.252 peakMiB= ratio=0.7029013539651837
+[13:18:30] scale=4 original  time   run=1 timeout nan_obj= s= peakMiB= ratio=
+[13:18:32] scale=4 optimised time   run=2 ok      nan_obj=1 s=0.258 peakMiB= ratio=0.7029013539651837
+[13:18:33] scale=4 optimised time   run=3 ok      nan_obj=1 s=0.254 peakMiB= ratio=0.7029013539651837
+[13:18:34] scale=4 optimised time   run=4 ok      nan_obj=1 s=0.254 peakMiB= ratio=0.7029013539651837
+[13:18:35] scale=4 optimised time   run=5 ok      nan_obj=1 s=0.253 peakMiB= ratio=0.7029013539651837
+[13:18:36] scale=4 optimised memory run=1 ok      nan_obj=1 s= peakMiB=18.99 ratio=0.7029013539651837
+[13:33:36] scale=4 original  memory run=1 timeout nan_obj= s= peakMiB= ratio=
+
+Summary (median seconds; peak MiB from tracemalloc runs)
+scale=0.25: tests=1589 opt=0.030s orig=7.950s speedup=263.1 peak opt=1.26 orig=1.26 equivalent=True
+scale=0.5: tests=3178 opt=0.053s orig=31.680s speedup=600.5 peak opt=2.42 orig=2.42 equivalent=True
+scale=1: tests=6357 opt=0.098s orig=126.555s speedup=1285.2 peak opt=4.82 orig=4.82 equivalent=True
+scale=2: tests=12714 opt=0.121s orig=318.267s speedup=2626.8 peak opt=9.51 orig=9.51 equivalent=True
+scale=4: tests=25428 opt=0.254s orig=s (timeout) speedup= peak opt=18.99 orig= equivalent=None
+Finished (UTC): 2026-11-10T13:33:36+00:00
